@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Mac Website</title>
+</head>
+
+<body>
+    <main class="container my-5">
+        <section class="row">
+            <div class="col">
+                <img class="img-fluid" src="images/mac.png" alt="" height="500px" width="500px">
+            </div>
+            <div class=" col px-4">
+                <h1>Customize your blue 24-inch iMac with Apple M1 chip</h1>
+                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7 core GPU nad 16 core
+                    nutral engine 8GB unified memory 256GB SSD storage two Thunderbolt / USB 4 ports magic mouse magic
+                    keyboard - US English</p>
+                <div class="my-5">
+                    <h4 class="fw-bold">Memory</h4>
+                    <button onclick="extra(1)" id="memory-btn-8gb" class="btn border-1 border-dark">8GB unified
+                        memory</button>
+                    <button onclick="extra(2)" id="memory-btn-16gb" class="btn border-1 border-dark">16GB unified
+                        memory</button>
+                </div>
+
+                <div class="my-5">
+                    <h4 class="fw-bold">Storage</h4>
+                    <button onclick="extra(3)" id="storage-btn-256gb" class="btn border-1 border-dark">256GB ssd
+                        storage</button>
+                    <button onclick="extra(4)" id="storage-btn-512gb" class="btn border-1 border-dark">512GB ssd
+                        storage</button>
+                    <button onclick="extra(5)" id="storage-btn-1tb" class="btn border-1 border-dark">1TB ssd
+                        storage</button>
+                </div>
+
+                <div class="my-5">
+                    <h4 class="fw-bold">Choose your delivery option</h4>
+                    <button onclick="extra('free')" id="free-delivery" class="btn border-1 border-dark">Friday, Aug 25
+                        Free
+                        Prime
+                        Delivery</button>
+                    <button onclick="extra('costly')" id="premium-delivery" class="btn border-1 border-dark">Friday, Aug
+                        21 Delivery charge
+                        $20</button>
+                </div>
+                <div class="mt-5">
+                    <div class="row">
+                        <p class="fw-bold col">Best Price</p>
+                        <p class="col fw-bold">$<span class="fw-bold" id="best-price">1299</span></p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <p class="fw-bold col">Extra memory cost</p>
+                        <p class="col fw-bold">$<span id="extra-memory-input" class="fw-bold">0</span></p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <p class="fw-bold col">Extra storage cost</p>
+                        <p class="col fw-bold">$<span id="extra-storage-input" class="fw-bold">0</span></p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <p class="fw-bold col">Delivery charge</p>
+                        <p class="col fw-bold">$<span id="extra-shipment-input" class="fw-bold">0</span></p>
+                    </div>
+                </div>
+                <br class="bg-dark">
+                <div class="">
+                    <div class="row">
+                        <p class="fw-bold col">Total Price</p>
+                        <p class="col fw-bold">$<span class="fw-bold" id="total-price"></span></p>
+                    </div>
+                </div>
+                <div>
+                    <p class="fw-normal">Add promo code</p>
+                    <div class="row g-0">
+                        <div class="col">
+                            <input id="promo-code" type="text" class="form-control" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <button id="apply-code" class="btn btn-danger">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center mt-4">
+            <H1>Total: $ <span id="extra-promo-section">1299</span></H1>
+        </section>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script src="js/function.js"></script>
+</body>
+
+</html>
